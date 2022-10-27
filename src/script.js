@@ -17,3 +17,15 @@ const parag = document.getElementById('img-paragraph');
 input.addEventListener('keyup', () => {
   parag.innerText = input.value;  
 })
+
+window.addEventListener('click', (event) => {
+    if (event.target.id === 'fire') {
+      div.style.border = '2px solid red';
+    }
+    if (event.target.id === 'water') {
+      div.style.border = '2px solid blue';
+    }
+    if (event.target.id === 'earth') {
+      div.style.border = '2px solid green';
+    }
+})
